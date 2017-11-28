@@ -1,0 +1,15 @@
+sudo: required
+language: python
+dist: trusty
+services:
+- docker
+before_script:
+- docker --version
+- docker-compose --version
+script:
+- docker-compose build
+- docker images
+- docker-compose up -d
+- docker ps
+- sleep 10
+- chmod ugo+x tests/test_php.sh && bash tests/test_java.sh
