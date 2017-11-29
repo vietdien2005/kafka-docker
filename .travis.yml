@@ -12,4 +12,6 @@ script:
 - docker-compose up -d
 - docker ps
 - sleep 10
-- chmod ugo+x tests/test_php.sh && bash tests/test_java.sh
+- chmod ugo+x tests/test_java.sh && bash tests/test_java.sh
+- chmod ugo+x tests/test_kafka.sh && bash tests/test_kafka.sh
+

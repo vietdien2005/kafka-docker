@@ -2,7 +2,6 @@
 .git*
 .gitignore
 
-kafka-logo.png
 LICENSE
 README.md
 README.md.bu
