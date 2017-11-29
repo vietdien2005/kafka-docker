@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vietdien2005/kafka-docker.svg?branch=master)](https://travis-ci.org/vietdien2005/kafka-docker)
+
 ![kafka-logo](https://kafka.apache.org/images/kafka_diagram.png)
 
 Docker Kafka
@@ -5,7 +7,7 @@ Docker Kafka
 
 Simple Docker Kafka Image on Alpine Linux
 
-## Version
+### Version
 
 - Alpine Linux 3.6
 - Java 8u131
@@ -13,7 +15,7 @@ Simple Docker Kafka Image on Alpine Linux
 - Scala 2.12
 - Zookeeper 3.4.11
 
-## Build
+### Build
 
 Command:
 
@@ -23,13 +25,13 @@ Or:
     
     docker build -t vietdien2005/kafka-docker-alpine .
 
-## Running
+### Running
 
 Command:
 
     docker-composer up -d
 
-## Configuration
+### Configuration
 
 Kafka is installed under /opt/kafka and make use of /opt/kafka/config/server.properties.
 
