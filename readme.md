@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/vietdien2005/kafka-docker.svg?branch=master)](https://travis-ci.org/vietdien2005/kafka-docker)
 
-![kafka-logo](https://kafka.apache.org/images/kafka_diagram.png)
+![kafka-logo](https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-card.png)
 
 Docker Kafka
 ===================
