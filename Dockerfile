@@ -22,6 +22,9 @@ RUN mkdir -p /opt \
 	&& chown -R kafka:kafka /opt/kafka
 
 COPY config/server.properties /opt/kafka/config/
+COPY config/zookeeper.properties /opt/kafka/config/
+COPY config/producer.properties /opt/kafka/config/
+COPY config/consumer.properties /opt/kafka/config/
 
 RUN rm -rf /var/cache/apk/*
 

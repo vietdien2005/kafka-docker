@@ -6,6 +6,7 @@ services:
 before_script:
 - docker --version
 - docker-compose --version
+- pip install kafka-python
 script:
 - docker-compose build
 - docker images
@@ -14,6 +15,7 @@ script:
 - sleep 10
 - chmod ugo+x tests/test_java.sh && bash tests/test_java.sh
 - chmod ugo+x tests/test_kafka.sh && bash tests/test_kafka.sh
+- python tests/python_kafka.py
 after_success:
 - docker login -u $DOCKER_USER -p $DOCKER_PASS
 - export REPO=vietdien2005/kafka_docker
